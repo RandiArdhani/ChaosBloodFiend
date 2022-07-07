@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FallingTrap : MonoBehaviour
+public class FallingTrap1 : MonoBehaviour
 {
     Rigidbody2D rb;
     BoxCollider2D boxCollider2D;
@@ -29,7 +29,7 @@ public class FallingTrap : MonoBehaviour
             {
                 if(hit.transform.tag == "Player")
                 {
-                    rb.gravityScale = 20;
+                    rb.gravityScale = 15;
                     isFalling = true;
                 }
             }
