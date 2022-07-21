@@ -29,7 +29,7 @@ public class FallingTrap2 : MonoBehaviour
             {
                 if(hit.transform.tag == "Player")
                 {
-                    rb.gravityScale = 17;
+                    rb.gravityScale = 14;
                     isFalling = true;
                 }
             }

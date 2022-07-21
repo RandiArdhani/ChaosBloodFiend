@@ -14,6 +14,10 @@ public class Door : MonoBehaviour
 
     private bool levelCompleted = false;
 
+    public int nextSceneLoad;
+    int levelPassed;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +44,7 @@ public class Door : MonoBehaviour
 
         if(doorOpen && Vector3.Distance(thePlayer.transform.position, transform.position) < 1f && Input.GetAxis("Vertical") > 0.1f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            CompleteLevel();
         }
     }
 
@@ -65,5 +69,14 @@ public class Door : MonoBehaviour
     private void CompleteLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
+
+        SceneManager.LoadScene(nextSceneLoad);
+
+        if(nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+        {
+            PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+        }
     }
 }

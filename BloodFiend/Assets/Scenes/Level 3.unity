@@ -1496,7 +1496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.93, y: 6.5000005, z: -10}
+  m_LocalPosition: {x: -23.1, y: 6.5000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1682,7 +1682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571972043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.93, y: -0.7, z: 0}
+  m_LocalPosition: {x: -23.1, y: -0.7, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1482030766}
@@ -3025,7 +3025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168321318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.93, y: 6.5000005, z: -10}
+  m_LocalPosition: {x: -23.1, y: 6.5000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1306890902}
@@ -5171,7 +5171,7 @@ MonoBehaviour:
   doorOpenSprite: {fileID: 21300000, guid: eadc68b1f8c32624ea236fe4e92c89f3, type: 3}
   doorOpen: 0
   WaitingToOpen: 0
-  nextSceneLoad: 2
+  nextSceneLoad: 3
 --- !u!61 &1967886150
 BoxCollider2D:
   m_ObjectHideFlags: 0
