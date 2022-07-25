@@ -40,6 +40,12 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
+        if (Input.GetKey(KeyCode.UpArrow) && landed)
+        {
+            jumpSound.Play();
+            Jump();
+        }
+
         animator.SetBool("run", hInput != 0);
         animator.SetBool("landed", landed);
     }
