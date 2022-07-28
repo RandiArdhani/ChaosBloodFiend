@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform kristalFollowPoint;
     public Kristal followingKristal;
 
+    
+
     [SerializeField] private AudioSource jumpSound;
 
     // Start is called before the first frame update
@@ -48,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("run", hInput != 0);
         animator.SetBool("landed", landed);
+
     }
 
     private void Jump()
